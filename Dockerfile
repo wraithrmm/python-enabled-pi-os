@@ -1,4 +1,3 @@
-#!/bin/bash
 FROM balenalib/raspberry-pi-debian:latest
 
 COPY qemu-arm-static /usr/bin
