@@ -1,6 +1,8 @@
 #!/bin/bash
 FROM balenalib/raspberry-pi-debian:latest
 
+COPY qemu-arm-static /usr/bin
+
 RUN set -x && \
 	apt-get update && apt-get upgrade -y --allow-unauthenticated && apt-get dist-upgrade -y --allow-unauthenticated
  
